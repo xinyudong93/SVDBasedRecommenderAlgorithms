@@ -14,7 +14,7 @@ a,b=svdcc.test(test1m)
 
 #test on timeSVD++ model
 
-ml1m=readMat.file2matrix2("DataSets/ml-1m/ratings.dat")
+ml1m=readMat.file2matrix2("data/ml-1m/ratings.dat")
 tr1m,ts1m=ml1m[:800000,:],ml1m[800000:,:]
 tvp=timeSVDPP.SVD_PP(tr1m)
 tvp.train()
